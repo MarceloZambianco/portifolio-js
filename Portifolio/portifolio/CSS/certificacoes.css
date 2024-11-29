@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: url('./espaco-sideral.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 1rem;
+    text-align: center;
+}
+
+a {
+    margin: 0 1rem;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+main {
+    flex-grow: 1;
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+section {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+ul {
+    list-style: none;
+    font-size: 1.25rem;
+    line-height: 1.6;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+ul li {
+    margin-bottom: 1rem;
+}
+
+.download-button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #008CBA;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.download-button:hover {
+    background-color: #005f6b;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+/* Tema Escuro */
+body.dark-theme {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.dark-theme header {
+    background-color: #222222;
+}
+
+body.dark-theme footer {
+    background-color: #222;
+    color: #bb86fc;
+}
+
+body.dark-theme main {
+    color: #ffffff;
+}
+
+body.dark-theme a {
+    color: #bb86fc;
+}
